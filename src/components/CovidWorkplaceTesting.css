@@ -1,0 +1,158 @@
+.covid-workplace-page {
+  background: #fff;
+}
+
+.covid-workplace-hero {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.covid-workplace-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
+}
+
+.covid-workplace-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 40px;
+}
+
+.covid-workplace-title {
+  font-size: clamp(24px, 4vw, 30px);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-xs);
+  font-family: sans-serif;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.covid-workplace-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-lg);
+}
+
+.covid-workplace-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.covid-workplace-left {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #1a1a1a;
+}
+
+.covid-workplace-body p {
+  margin: 0 0 1em;
+}
+
+.covid-workplace-body .inline-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: #1a56c4;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.covid-workplace-body .inline-link:hover {
+  color: #0d3d8c;
+}
+
+.covid-workplace-right {
+  position: sticky;
+  top: 20px;
+}
+
+.covid-workplace-image-wrap {
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.covid-workplace-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.covid-workplace-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-md);
+  margin-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.covid-workplace-copyright {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.covid-workplace-social {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.covid-workplace-social .social-icon {
+  color: var(--color-text-light);
+  transition: color var(--transition-base);
+}
+
+.covid-workplace-social .social-icon:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .covid-workplace-hero-image {
+    max-height: 320px;
+  }
+  .covid-workplace-inner {
+    padding: 28px 20px 36px;
+  }
+  .covid-workplace-two-col {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .covid-workplace-right {
+    position: static;
+  }
+  .covid-workplace-footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .covid-workplace-hero-image {
+    max-height: 220px;
+  }
+  .covid-workplace-inner {
+    padding: 24px 16px 32px;
+  }
+  .covid-workplace-title {
+    font-size: 24px;
+  }
+  .covid-workplace-left {
+    font-size: 15px;
+  }
+}

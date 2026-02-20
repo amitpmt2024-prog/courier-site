@@ -1,0 +1,33 @@
+.hero {
+  width: 100%;
+  background: #fff;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  max-height: 500px;
+  background: var(--color-bg-subtle);
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-height: 360px;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    max-height: 240px;
+  }
+}

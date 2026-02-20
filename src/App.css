@@ -1,0 +1,26 @@
+.app-wrap {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.content-block {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: var(--shadow-lg);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .content-block {
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-block {
+    margin: 0;
+    box-shadow: none;
+  }
+}
